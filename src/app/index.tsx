@@ -5,7 +5,12 @@ export default function Index() {
     <View style={styles.container}>
       <Image source={require("../../assets/images/icon.png")} style={styles.logo} />
       <Text style={styles.title}>Campus Spots</Text>
-      <Text style={styles.subtitle}>Your pocket guide to Kraków</Text>
+      <Text style={styles.subtitle}>Votre guide de poche ici à Krakow</Text>
+      <View style={styles.card}>
+  <Text style={styles.cardName}>Lionel Yameogo</Text>
+  <Text>Lille-France, General Engineering</Text>
+  <Text>Good understanding and team spirit on the football pitch at Porte de Valenciennes.</Text>
+</View>
     </View>
   );
 }
@@ -30,5 +35,15 @@ const styles = StyleSheet.create({
     marginTop: 4,
     fontSize: 16,
     color: "#666",
+  },
+  card: {
+  backgroundColor: "#5c52c1",
+  borderRadius: 12,
+  padding: 16,
+  marginTop: 24,
+  },
+  cardName: {
+    fontWeight: "700",
+    fontSize: 18,
   },
 });
