@@ -1,6 +1,7 @@
 import { Image, StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
+     console.log("Hello from my phone");
   return (
     <View style={styles.container}>
       <Image source={require("../../assets/images/icon.png")} style={styles.logo} />
@@ -42,7 +43,7 @@ const styles = StyleSheet.create({
     color: "#666",
   },
   card: {
-  backgroundColor: "#5c52c1",
+  backgroundColor: "#ffff",
   borderRadius: 12,
   padding: 16,
   marginTop: 24,
